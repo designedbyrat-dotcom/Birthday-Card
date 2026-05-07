@@ -5,15 +5,32 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Playfair Display", serif;
   --font-bengali: "Hind Siliguri", sans-serif;
+  
+  --color-brand-rose: #be123c;
+  --color-brand-petal: #fdf2f8;
+  --color-brand-gold: #b45309;
 }
 
 :root {
-  --romantic-pink: #fdf2f8;
-  --romantic-rose: #be123c;
-  --romantic-gold: #b45309;
+  --ivory: #fffdfa;
+  --soft-rose: #fff1f2;
 }
 
 body {
-  @apply bg-pink-50 text-gray-900 selection:bg-rose-200 selection:text-rose-900;
+  @apply bg-[#fffdfa] text-slate-900 selection:bg-rose-100 selection:text-rose-900;
   font-family: var(--font-bengali);
+  -webkit-font-smoothing: antialiased;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px 0 rgba(190, 18, 60, 0.05);
+}
+
+.text-elegant-gradient {
+  background: linear-gradient(135deg, #be123c 0%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
